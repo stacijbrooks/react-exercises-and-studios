@@ -1,6 +1,15 @@
+import recipedata from './recipe.json';
+import './styling.css';
+
 function AuthorInfo() {
-   return;
+
+  let recipeAuthor = recipedata.map(recipe => {
+    return <div> key={recipe.name}>{recipe.author}</div>
+  })
+
+   return 
  }
+ //28.07 time on video
  
  export default AuthorInfo;
  
