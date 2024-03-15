@@ -1,4 +1,4 @@
-import recipedata from './receipe.json';
+import recipedata from './recipe.json';
 import './styling.css';
 
 
