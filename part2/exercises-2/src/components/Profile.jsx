@@ -12,12 +12,21 @@ let listItem = oceans.map(ocean =>
 
 function Profile() {
    return (
-      <>
-         <ul>
-            {listItem}
-         </ul>
-         <Button />
-      </>
+      <div>
+         {oceans.map(ocean => (
+            <div key={ocean.id} className={`${ocean.fishCheck === "true" ? "isAFish" : "profile"}`}>
+               <h2>{ocean.name}</h2>
+               <img src={ocean.image} alt={ocean.name} />
+               <h3>Fun Facts</h3>
+               <ul>
+                  <li>{ocean.fact1}</li>
+                  <li>{ocean.fact2}</li>
+                  <li>{ocean.fact3}</li>
+               </ul>
+               <Button />
+            </div>
+         ))}
+      </div>
    );
 }
 
