@@ -10,11 +10,11 @@ export default function StatusChange () {
 
    return (
       <div style={{paddingTop: "50px"}}>
-         <form onSubmit={handleSubmit}>
+         {/* <form onSubmit={handleSubmit}>
             <label>Have you tried this recipe? Add your notes here: <input type="text" value={notes} onChange={handleChange} />
             </label>
             <input type="submit" />
-         </form>
+         </form> */}
 
          <p>My Recipe Notes aren't here!</p>
 
