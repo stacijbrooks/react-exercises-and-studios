@@ -17,9 +17,9 @@ const RecipeAuthor = () => {
 const RecipeIngredients = () => {
    const ingredients = ['dark chocolate', 'butter', 'vanilla', 'eggs', 'sugar'];
 
-   let ingedientListItems = ingredients.map((ingredient, index)) => {
+   let ingedientListItems = ingredients.map((ingredient, index) => {
       return <li key={index}>{ingredient}</li>
-   }
+   })
    return(
       <div>
          <h3>Recipe Ingredients</h3>
